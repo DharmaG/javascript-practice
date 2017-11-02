@@ -48,3 +48,16 @@ var lisa = new Friend("Lisa", "red");
 
 alert("Hi my name is " + denny.name + ". My favorite color is "+ denny.tshirtColor);
 alert("Hi my name is " + lisa.name + ". My favorite color is "+ lisa.tshirtColor);
+
+
+// SCOPE EXAMPLE
+var example = "value";
+
+function alertExample() {
+  alert(example);
+
+  var anotherExample = "?";
+  alert(anotherExample);
+}
+
+alertExample();
