@@ -61,3 +61,25 @@ function alertExample() {
 }
 
 alertExample();
+
+
+// ------------------------------------
+var three = "3";
+
+function alertNumber() {
+  var one = "1";
+  alert(one);
+
+  function alertAnotherNumber(){
+    var two = "2";
+    alert(one);
+    alert(two);
+    alert(three);
+
+  }
+
+  alertAnotherNumber();
+}
+
+alertNumber();
+  // alertAnotherNumber(); -> this does not happen because it's inside the alertNumber function SCOPE
